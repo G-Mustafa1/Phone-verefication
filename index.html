@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Phone Verefication</title>
+   <!-- Css file -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- mein-contanir -->
+   <div class="contanir">
+      <div class="form">
+         <h1>Phone <br> Varefication</h1>
+         <div class="Pnum">
+            <label for="name">Phone</label><br>
+            <input type="number" placeholder="921234567890" id="number" required>
+         </div>
+         <button id="send">Submit</button>
+         <div class="Pnum">
+            <label for="name">OTP</label><br>
+            <input type="number" id="otp" required>
+         </div>
+         <button id="verify">Verify</button>
+         <div id="recaptcha"></div>
+      </div>
+   </div>
+   <!-- mein-contanir-end -->
+
+   <!-- sweetalart cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- Firebase-file -->
+   <script type="module" src="firebase.js"></script>
+   <!-- Mein-js-file -->
+   <script type="module" src="app.js"></script>
+</body>
+</html>

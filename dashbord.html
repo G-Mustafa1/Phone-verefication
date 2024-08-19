@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <title>Dashbord</title>
+   <style>
+      .navbar{
+         background-color: black;
+         /* margin-bottom: 100px; */
+      }
+      .navbar-nav li{
+  margin-left: 20px;
+  color: #fff;
+}
+@media only screen and (max-width: 450px){
+   .carousel-item img{
+     height: 200px;
+   }
+}
+.carousel-item img{
+   width: 100%;
+   height: 100vh;
+}
+.carousel {
+   margin-top: 80px;
+}
+.navbar-nav{
+  color: #fff;
+  margin-left: 40px;
+}
+.navbar-toggler{
+   background-color: darkgrey;
+}
+#dashboard:hover{
+   transition: 1.1s;
+   transform: 1.1s;
+   box-shadow: rgb(44, 255, 2);
+   background-color: rgb(46, 143, 8);
+}
+   </style>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-black px-5 py-2 fixed-top">
+      <div data-aos="fade-down" class="container-fluid">
+        <a class="navbar-brand fs-1 text-light" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-1 mb-lg-0 fs-4 ">
+            <li class="nav-item ">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">About</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link text-light" href="#">Services</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link text-light" href="#">Contact</a>
+             </li>
+            </ul>
+            <button id="dashboard" class="btn btn-outline-success fs-5">Sing out</button>
+        </div>
+      </div>
+   </nav>
+   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img-1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/img-3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+       <!-- sweetalart cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- bootstrap cdn -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <!-- dshbord.js -->
+   <script type="module" src="dashbord.js"></script>
+</body>
+</html>
